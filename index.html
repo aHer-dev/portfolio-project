@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="assets/styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Willkommen zu meinem Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#projects">Projekte</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="projects">
+                <h2>Meine Projecte</h2>
+                <ul>id="project-list"</ul>
+            </section>
+            <section id="contact">
+                <h2>Kontaktformular</h2>
+                <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="message">Nachricht</label>
+                    <textarea name="message" id="message" required></textarea>
+                    <button type="submit"></button>
+                </form>
+                <p id="form-output"></p>
+            </section>
+        </main>
+        <footer>
+            <p>© 2025 Portfolio</p>
+        </footer>
+    </body>
+</html>
