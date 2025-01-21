@@ -1,40 +1,68 @@
 <!DOCTYPE html>
-<html lang ="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="assets/styles.css">
-    </head>
-    <body>
-        <header>
-            <h1>Willkommen zu meinem Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#projects">Projekte</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="projects">
-                <h2>Meine Projecte</h2>
-                <ul>id="project-list"</ul>
-            </section>
-            <section id="contact">
-                <h2>Kontaktformular</h2>
-                <form id="contact-form">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="message">Nachricht</label>
-                    <textarea name="message" id="message" required></textarea>
-                    <button type="submit"></button>
-                </form>
-                <p id="form-output"></p>
-            </section>
-        </main>
-        <footer>
-            <p>© 2025 Portfolio</p>
-        </footer>
-    </body>
+<html lang="en">
+<head>
+    <!-- Zeichensatz des Dokuments auf UTF-8 setzen -->
+    <meta charset="UTF-8">
+    <!-- Responsives Design sicherstellen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titel der Webseite, wird im Browser-Tab angezeigt -->
+    <title>Portfolio</title>
+    <!-- Verlinkung zur CSS-Datei im Ordner "asset" -->
+    <link rel="stylesheet" href="asset/styles.css">
+    <!-- Verlinkung zur JavaScript-Datei im Ordner "scripts", mit "defer", damit das Skript nach dem Laden des HTMLs ausgeführt wird -->
+    <script src="scripts/app.js" defer></script>
+</head>
+<body>
+    <!-- Kopfbereich der Seite -->
+    <header>
+        <!-- Hauptüberschrift der Seite -->
+        <h1>Willkommen zu meinem Portfolio</h1>
+        <!-- Navigation innerhalb des Headers -->
+        <nav role="navigation">
+            <!-- Ungeordnete Liste für Navigationslinks -->
+            <ul>
+                <!-- Link zu den Projekten (scrollt zur ID "projects") -->
+                <li><a href="#projects">Projekte</a></li>
+                <!-- Link zum Kontaktbereich (scrollt zur ID "contact") -->
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hauptinhalt der Seite -->
+    <main>
+        <!-- Abschnitt für Projekte -->
+        <section id="projects">
+            <!-- Überschrift für den Projektbereich -->
+            <h2>Meine Projekte</h2>
+            <!-- Leere Liste, die von JavaScript dynamisch gefüllt wird -->
+            <ul id="project-list"></ul>
+        </section>
+
+        <!-- Abschnitt für das Kontaktformular -->
+        <section id="contact">
+            <!-- Überschrift für das Kontaktformular -->
+            <h2>Kontaktformular</h2>
+            <!-- Formular mit Eingabefeldern -->
+            <form id="contact-form">
+                <!-- Label und Eingabefeld für den Namen -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <!-- Label und Eingabefeld für die Nachricht -->
+                <label for="message">Nachricht:</label>
+                <textarea name="message" id="message" required></textarea>
+                <!-- Absende-Button -->
+                <button type="submit">Absenden</button>
+            </form>
+            <!-- Bereich für die Ausgabe des Formular-Feedbacks -->
+            <p id="form-output"></p>
+        </section>
+    </main>
+
+    <!-- Fußzeile der Seite -->
+    <footer>
+        <!-- Copyright-Hinweis -->
+        <p>© 2025 Portfolio</p>
+    </footer>
+</body>
 </html>

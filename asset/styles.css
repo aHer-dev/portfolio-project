@@ -1,32 +1,89 @@
+/* Allgemeine Stile für die gesamte Seite */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f9f9f9;
-    color: #333;
+    font-family: 'Roboto', sans-serif; /* Setzt die Schriftart auf Roboto */
+    margin: 0; /* Entfernt Standard-Außenabstand des Body-Elements */
+    padding: 0; /* Entfernt Standard-Innenabstand des Body-Elements */
+    background: #f9f9f9; /* Hellt den Hintergrund der Seite auf */
+    color: #333; /* Setzt die Standardtextfarbe auf ein dunkles Grau */
 }
-header {
-    background: #007bff;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-}
-nav ul {
-    list-style: none;
-    padding: 0;
 
+/* Stil für die Hauptüberschrift (h1) */
+h1 {
+    font-weight: 700; /* Setzt die Schrift auf Fett */
+    color: white; /* Weißer Text, um auf dunklem Hintergrund sichtbar zu sein */
 }
+
+/* Header-Bereich */
+header {
+    background: #007bff; /* Setzt den Hintergrund auf Blau */
+    color: white; /* Setzt die Standardtextfarbe innerhalb des Headers auf Weiß */
+    padding: 10px 20px; /* Fügt Innenabstand hinzu, um Inhalte vom Rand wegzuschieben */
+    text-align: center; /* Zentriert den Text horizontal */
+}
+
+/* Navigation (Liste innerhalb des Headers) */
+nav ul {
+    list-style: none; /* Entfernt die Standard-Aufzählungspunkte der Liste */
+    padding: 0; /* Entfernt Innenabstand der Liste */
+}
+
+/* Navigation (Einzelne Listenelemente) */
 nav ul li {
-    display: inline;
-    padding: 0;
+    display: inline; /* Zeigt die Listenelemente in einer Reihe (inline) an */
+    padding: 0; /* Entfernt Innenabstand für die Listenelemente */
 }
+
+/* Hauptbereich (main) */
 main {
-    padding: 20px;
+    max-width: 800px; /* Begrenzt die maximale Breite des Inhalts auf 800px */
+    margin: 0 auto; /* Zentriert den Inhalt horizontal */
+    padding: 20px; /* Fügt Innenabstand zum Inhalt hinzu */
+    background-color: #f9f9f9; /* Setzt den Hintergrund des Hauptbereichs auf helles Grau */
+    border-radius: 10px; /* Macht die Ecken des Hauptbereichs abgerundet */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Fügt einen leichten Schatten für ein modernes Design hinzu */
 }
+
+/* Formularstil */
+form {
+    display: flex; /* Ordnet die Formularelemente als flexibles Layout an */
+    flex-direction: column; /* Stapelt die Elemente vertikal */
+    gap: 10px; /* Fügt Abstand zwischen den Formularelementen hinzu */
+}
+
+/* Button-Stil */
 button {
-    background: #28a745;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+    background: #28a745; /* Setzt den Button-Hintergrund auf Grün */
+    color: white; /* Setzt die Textfarbe des Buttons auf Weiß */
+    border: none; /* Entfernt die Standard-Umrandung des Buttons */
+    padding: 10px; /* Fügt Innenabstand für besseren Klickbereich hinzu */
+    border-radius: 5px; /* Macht die Ecken des Buttons abgerundet */
+    cursor: pointer; /* Zeigt beim Hover den Zeiger an */
+}
+
+/* Button-Hover-Effekt */
+button:hover {
+    background-color: #218838; /* Ändert die Hintergrundfarbe des Buttons beim Hover */
+}
+
+/* Footer-Stil */
+footer {
+    text-align: center; /* Zentriert den Text im Footer */
+    background-color: #333; /* Setzt den Hintergrund des Footers auf Dunkelgrau */
+    color: white; /* Setzt die Textfarbe des Footers auf Weiß */
+    padding: 10px; /* Fügt Innenabstand hinzu, damit der Text nicht am Rand klebt */
+    position: fixed; /* Positioniert den Footer fest am unteren Bildschirmrand */
+    bottom: 0; /* Setzt den Footer an den unteren Rand des Fensters */
+    width: 100%; /* Lässt den Footer über die gesamte Breite der Seite gehen */
+}
+
+/* Media Query für kleine Bildschirme */
+@media (max-width: 600px) {
+    main {
+        padding: 10px; /* Reduziert den Innenabstand auf kleineren Bildschirmen */
+    }
+
+    nav ul li {
+        display: block; /* Zeigt die Navigationselemente in einer Spalte (vertikal) an */
+        margin: 5px 0; /* Fügt Abstand zwischen den Navigationselementen hinzu */
+    }
 }

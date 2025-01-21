@@ -1,0 +1,27 @@
+Problem: Falscher Pfad zur JavaScript-Datei
+Fehler: Im HTML war der Pfad asset/app.js angegeben, obwohl die Datei im Ordner scripts lag.
+Lösung: Der Pfad wurde zu scripts/app.js geändert.
+
+Problem: Python-Skript zeigte keine Ausgabe
+Fehler: Der Code war unvollständig oder fehlerhaft (z. B. fehlender Doppelpunkt : in der Funktionssignatur).
+Lösung: Syntaxfehler korrigiert und das Skript getestet.
+
+Problem: JavaScript-Elemente wurden nicht geladen
+Fehler: IDs wie project-list, contact-form oder form-output wurden möglicherweise nicht korrekt gefunden.
+Lösung: Überprüfung der IDs im HTML und im JavaScript, um sicherzustellen, dass sie übereinstimmen.
+
+Problem: Keine Projekte in der Liste angezeigt
+Fehler: Die dynamische Generierung der Projekte funktionierte nicht, da die Liste #project-list nicht korrekt angesprochen wurde.
+Lösung: JavaScript-Code überprüft und sichergestellt, dass getElementById("project-list") die richtige ID anspricht.
+Seite war auf Vollscreen. deshalb kein Scrollen
+Problem: Links in der Webseite funktionierten nicht
+Fehler: Die Seite war zu klein, sodass kein Scroll-Effekt sichtbar war.
+Lösung: Browserfenster verkleinert und Inhalte erweitert, um die Funktionalität zu überprüfen.
+
+Ergebnis
+Nach Behebung aller Fehler:
+
+Dateien und Ordnerstruktur sind korrekt organisiert.
+JavaScript und CSS werden korrekt eingebunden.
+Projekte und Formularfunktionalität arbeiten wie gewünscht.
+Die Webseite läuft einwandfrei und ohne Fehler.
